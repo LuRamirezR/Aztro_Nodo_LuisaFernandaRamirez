@@ -3,38 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Formulario</title>
+    <link rel="stylesheet" href="../styles/style-form.css">
 </head>
 <body>
     <h1>Inscripción de carreras para estudiar en nodo EAFIT</h1>
-    <a href="../index.html">Inicio</a>
+    <a class="btn-main" href="../index.html">Inicio</a>
     <p> Por favor completa el siguiente formulario, los campos que tienen <strong>(*)</strong> se requiere llenar para enviar la información</p>
-    <form>
-        <fieldset>
-            <legend>Datos personales</legend>
-            <div>
+    <form class="form-nodo" method="post">
+        <fieldset class="field">
+            <legend class="title-section">Datos personales</legend>
+            <div class="division">
                 <label for="name">* Nombre:</label>
                 <input type="text" id="name" name="name" required>
             </div>
-            <div>
+            <div class="division">
                 <label for="lname">* Apellido:</label>
                 <input type="text" id="lname" name="lname" required>
             </div>
         </fieldset>
-        <fieldset>
-            <legend>Datos de contacto</legend>
-            <div>
+        <fieldset class="field">
+            <legend class="title-section">Datos de contacto</legend>
+            <div class="division">
                 <label for="mail">* Correo:</label>
                 <input type="email" id="mail" name="mail" placeholder="user@mail.com" required>
             </div>
-            <div>
+            <div class="division">
                 <label for="tel-contact">Teléfono de contacto (celular):</label>
-                <input type="tel" id="tel-contact" name="tel-contact" placeholder="Formato: 3001234567">
+                <input type="tel" id="tel-contact" name="tel-contact" placeholder=" 3001234567">
             </div>
         </fieldset>
-        <fieldset>
-            <legend>Datos de residencia</legend>
-            <div>
+        <fieldset class="field">
+            <legend class="title-section">Datos de residencia</legend>
+            <div class="division">
                 <label for="country">* País:</label>
                 <select name="countrys" id="countrys" required>
                     <option value="" selected disabled>--Selecciona una opción--</option>
@@ -45,7 +49,7 @@
                     <option value="bras">Brasil</option>
                 </select>
             </div>
-            <div>
+            <div class="division">
                 <label for="department">Departamento:</label>
                 <select name="departments" id="departments">
                     <option value="" selected disabled>--Selecciona una opción--</option>
@@ -56,14 +60,14 @@
                     <option value="cauca">Valle del Cauca</option>
                 </select>
             </div>
-            <div>
+            <div class="division">
                 <label for="address">Dirección:</label>
                 <input type="text" id="address" name="address">
             </div>
         </fieldset>
-        <fieldset>
-            <legend>Inscripción de estudios</legend>
-            <div>
+        <fieldset class="field">
+            <legend class="title-section">Inscripción de estudios</legend>
+            <div class="division">
                 <label for="career">* ¿A qué carrera deseas inscribirte? (puedes escoger 1 o más)</label><br/>
                 <label>Mantén pulsada la tecla <strong>Ctrl</strong> (Windows) o <strong>Command </strong> (Mac) para seleccionar varias opciones.</label><br/>
                 <select name="career" id="career" multiple required>
@@ -77,14 +81,14 @@
                     <option value="mdigital">Marketing Digital</option>
                 </select>
             </div>
-            <div>
+            <div class="division">
                 <label for="system">* Modalidad:</label><br/>
                 <input type="radio" id="presencial" name="modalidad" value="presencial" required>
                 <label for="presencial">Presencial</label><br/>
                 <input type="radio" id="online" name="modalidad" value="online">
                 <label for="online">Online</label>
             </div>
-            <div>
+            <div class="division">
                 <label for="pjob">¿Estás trabajando actualmente?</label><br/>
                 <input type="radio" id="jobyes" name="jobyes">
                 <label for="jobyes">Sí</label><br/>
@@ -92,15 +96,15 @@
                 <label for="jobno">No</label>
             </div>
         </fieldset>
-        <fieldset>
-            <legend>Sobre ti</legend>
-            <div>
+        <fieldset class="field">
+            <legend class="title-section">Sobre ti</legend>
+            <div class="division">
                 <label for="personal">Descripción personal:</label>
                 <textarea id="personal" name="personal" maxlength="300" placeholder="Ingresa tu descripción personal en máximo 300 caracteres"></textarea>
             </div>
         </fieldset>
-        <input type="reset" value="Limpiar">
-        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar" class="clear">
+        <input type="submit" value="Enviar" class="send">
     </form>
 </body>
 </html>
