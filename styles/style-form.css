@@ -1,9 +1,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f1f3f5;
-    width: 85%;
+    width: 50%;
     margin: 0 auto;
-    border-bottom: 6px solid #612426;
 }
 
 h1 {
@@ -33,6 +32,9 @@ p {
 
 .form-nodo {
     background-color: #fff5f5;
+    width: 50%;
+    margin: 0 auto;
+    border-bottom: 6px solid #612426;
 }
 
 .title-section {
