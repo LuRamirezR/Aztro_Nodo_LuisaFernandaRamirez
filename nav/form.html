@@ -17,7 +17,7 @@
     <a class="btn-main" href="../index.html">Inicio</a>
     <p> Por favor completa el siguiente formulario, los campos que tienen <strong>(*)</strong> se requiere llenar para enviar la información</p>
     <form class="form-nodo" method="post">
-        <fieldset class="field">
+        <fieldset class="field personal-data">
             <legend class="title-section">Datos personales</legend>
             <div class="division">
                 <label for="name">* Nombre:</label>
@@ -28,18 +28,18 @@
                 <input type="text" id="lname" name="lname" required>
             </div>
         </fieldset>
-        <fieldset class="field">
+        <fieldset class="field personal-data">
             <legend class="title-section">Datos de contacto</legend>
             <div class="division">
                 <label for="mail">* Correo:</label>
                 <input type="email" id="mail" name="mail" placeholder="user@mail.com" required>
             </div>
             <div class="division">
-                <label for="tel-contact">Teléfono de contacto (celular):</label>
+                <label for="tel-contact">Celular:</label>
                 <input type="tel" id="tel-contact" name="tel-contact" placeholder=" 3001234567">
             </div>
         </fieldset>
-        <fieldset class="field">
+        <fieldset class="field address-data">
             <legend class="title-section">Datos de residencia</legend>
             <div class="division">
                 <label for="country">* País:</label>
@@ -85,29 +85,36 @@
                 </select>
             </div>
             <div class="division">
-                <label>* Modalidad:</label><br/>
-                <input type="radio" id="presencial" name="modalidad" value="presencial" required>
-                <label>Presencial</label><br/>
-                <input type="radio" id="online" name="modalidad" value="online">
-                <label>Online</label>
+                <label>* Modalidad:</label>
+                <div class="mode-study">
+                    <input type="radio" id="presencial" name="modalidad" value="presencial" required>
+                    <label>Presencial</label><br/>
+                    <input type="radio" id="online" name="modalidad" value="online">
+                    <label>Online</label>
+                </div>
+                
             </div>
             <div class="division">
-                <label>¿Estás trabajando actualmente?</label><br/>
-                <input type="radio" id="jobyes" name="jobyes">
-                <label for="jobyes">Sí</label><br/>
-                <input type="radio" id="jobno" name="jobno">
-                <label for="jobno">No</label>
+                <label>¿Estás trabajando actualmente?</label>
+                <div class="mode-study">
+                    <input type="radio" id="jobyes" name="jobyes">
+                    <label for="jobyes">Sí</label><br/>
+                    <input type="radio" id="jobno" name="jobno">
+                    <label for="jobno">No</label>
+                </div>                
             </div>
         </fieldset>
         <fieldset class="field">
             <legend class="title-section">Sobre ti</legend>
-            <div class="division">
+            <div class="division personal-description">
                 <label for="personal">Descripción personal:</label>
                 <textarea id="personal" name="personal" maxlength="300" placeholder="Ingresa tu descripción personal en máximo 300 caracteres"></textarea>
             </div>
         </fieldset>
-        <input type="reset" value="Limpiar" class="clear">
-        <input type="submit" value="Enviar" class="send">
+        <div class="btn-submit">
+            <input type="reset" value="Limpiar" class="clear">
+            <input type="submit" value="Enviar" class="send">
+        </div>
     </form>
 </body>
 </html>

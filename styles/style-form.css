@@ -42,14 +42,41 @@ p {
     font-weight: bold;
 }
 
+.personal-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.address-data {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .field {
     margin-bottom: 10px;
 }
 .division {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+}
+
+.mode-study {
+    display: flex;
+    flex-direction: row;
+}
+
+.personal-description {
+    display: flex;
+    align-items: flex-start;
+}
+
+.btn-submit {
+    display: flex;
+    justify-content: end;
 }
 
 input[type="reset"].clear {
+    text-align: right;
     margin: 30px 5px;
     border: none;
     background-color: #e6eed6;
@@ -67,6 +94,7 @@ input[type="reset"].clear:hover {
 }
 
 input[type="submit"].send {
+    text-align: right;
     margin: 30px 5px;
     background-color: #228be6;
     color: #e6eed6;
