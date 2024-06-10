@@ -67,7 +67,7 @@ p {
 
 .personal-description {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .btn-submit {
