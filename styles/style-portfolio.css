@@ -1,0 +1,155 @@
+/*
+Fondo: #fcfcfc
+Color primario: #4756df, #8b8eaf
+Color secundario: #ff7235, #a17a69
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;    
+    background-color: #fcfcfc;
+}
+
+/* Main Section */
+.main-section {
+    width: 60%;
+    margin: auto;
+    font-weight: 300;
+}
+
+#about {
+    height: 500px;
+}
+
+#skills {
+    height: 500px;
+}
+
+#projects {
+    height: 500px;
+}
+
+#contact {
+    height: 500px;
+}
+
+h2 {
+    color: #212529;
+    text-align: center;
+    font-weight: 900;
+}
+
+/* Header Section */
+.header-bar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 45px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    color: #4756df;
+    font-weight: 900;
+}
+
+nav, ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-items:link, .nav-items:visited {
+    text-decoration: none;
+    color: #4756df;
+}
+
+.nav-items:hover, .nav-items:active {
+    color: #ff7235;
+}
+
+/* Social Network Section */
+.social-net {
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* About me Section */
+.aboutme {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.title-about {
+    grid-column: 1 / 4;
+}
+
+.code-img {
+    height: 300px;
+}
+
+/* Skills Section */
+.imgs-logo{
+    height: 200px;
+}
+
+/* Form Section */
+.contactme, h2 {
+    margin-bottom: 30px;
+}
+.contactme {
+    color: #4756df;
+    font-weight: 500;
+}
+
+.form-contact {
+    max-width: 700px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction:column;
+}
+
+.form-division {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.input-field {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #4756df;
+    border-radius: 3px;
+}
+
+input[type="submit"].btn-send {
+    border: 2px solid #4756df;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    padding: 5px;
+}
+input[type="submit"].btn-send:hover {
+    background-color: #4756df;
+    color: #f9f9f9;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #8b8eaf;
+}
