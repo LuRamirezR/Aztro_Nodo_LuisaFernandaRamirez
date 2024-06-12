@@ -108,7 +108,33 @@ nav, ul {
 
 /* Skills Section */
 .imgs-logo{
-    height: 200px;
+    height: 100px;
+}
+
+.myskills{
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.first-set-skills, .second-set-skills {
+    display: flex;
+    justify-content: center;
+    gap: 50px;    
+}
+
+.first-set-skills img, .second-set-skills img {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #8b8eaf;
+}
+
+.myskills h2 {
+    text-align: center;
 }
 
 /* Form Section */
