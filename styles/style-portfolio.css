@@ -137,6 +137,74 @@ nav, ul {
     text-align: center;
 }
 
+/* Projects Section */
+.myprojects {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.projects-container {
+    display: flex;    
+    gap: 30px;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-content:hover {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #8b8eaf;
+    padding: 20px;
+}
+
+.project-card {
+    text-decoration: none;
+    color: #212529;
+}
+
+.project-content p {
+    text-align: left;
+}
+
+.title-icon {
+    display: flex;
+    gap: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.myprojects h2 {
+    text-align: center;
+}
+
+.project-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.project-icon {
+    width: 20px;
+    color: #4756df;
+}
+
+.imagen {
+    margin: 0 auto;
+}
+
+.project-card {
+    text-align: center;
+}
+
+.project-card img {
+    height: 120px;
+    align-items: center;    
+    border-radius: 8px;
+}
+
 /* Form Section */
 .contactme {
     color: #4756df;
