@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectángulo</title>
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../styles/variables.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul class="header-list">
+                <li>
+                    <a href="./rect.html">Rectángulo</a>
+                </li>
+                <li>
+                    <a href="./circle.html">Círculo</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main Section -->
+     <main>
+        <!-- First Section - Fondo, heroe y titulo ppal -->
+        <section class="container-image">
+            <h1>EL RECTÁNGULO</h1>
+            <img src="../img/superhero.png" alt="imagen de un super heroe" class="hero-image">
+        </section>
+        <!-- Second Section - Calculos -->
+         <section class="second-section">
+            <!-- Subtítulo -->
+            <div>
+                <h2>CALCULADORA DE ÁREA, PERÍMETRO Y DIAGONAL</h2>
+            </div>
+            <!-- Sección imagen y texto -->
+            <div class="second-section__info">
+                <!-- imagen de rectángulo -->
+                <div class="img-rect">
+                    <img src="../img/rectangulo.png" alt="imagen de rectangulo con base y altura">
+                </div>
+                <!-- Ingreso de base y altura con sus inputs -->
+                <div class="value-in">
+                    <form id="rect-base-altura">
+                        <div class="form-div">
+                            <label for="base-rect">Base en centímetros</label>
+                            <input type="number" id="base-rect" name="base-rect" placeholder="Escribe la base en cm">
+                        </div>
+                        <div class="form-div">
+                            <label for="altura-rect">Altura en centímetros</label>
+                            <input type="number" id="altura-rect" name="altura-rect" placeholder="Escribe la altura en cm">
+                        </div>
+                    </form>
+                </div>
+                <!-- Resultados calculo -->
+                <div class="value-out">
+                    <h3>Resultados</h3>
+                    <div class="form-div-results">
+                        <label>Área (cm²)</label>
+                        <input type="text" id="resultado-area" readonly>
+                    </div>
+                    <div class="form-div-results">
+                        <label>Perímetro (cm)</label>
+                        <input type="text" id="resultado-perimetro" readonly>
+                    </div>
+                    <div class="form-div-results">
+                        <label>Diagonal (cm)</label>
+                        <input type="text" id="resultado-diagonal" readonly>
+                    </div>
+                </div>
+            </div>
+            <!-- Boton para calcular -->
+            <div class="btn-calc">
+                <button onclick="calcularAreaYPerimetro()">CALCULAR</button>
+            </div>
+         </section>
+     </main>
+     <script src="../calculos/rect.js"></script>
+</body>
+</html>

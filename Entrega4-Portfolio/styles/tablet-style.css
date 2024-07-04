@@ -1,0 +1,19 @@
+/* Tablets Styles - Responsive */
+
+@media (min-width: 768px) and (max-width: 1023px) {    
+    /* Navigation Bar */
+    .navigation-bar img {
+        width: 200px;
+    }
+
+    /* Home */
+    /* Logo and Principal Title Section */
+    .ppal-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        margin: 100px 40px 50px;
+    }
+}
+
