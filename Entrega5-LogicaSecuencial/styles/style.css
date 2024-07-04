@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Work Sans Variable', sans-serif;
+    background-color: var(--bg-blue);
+}
+
+/********** Header **********/
+/* Index page Header */
+.index-header h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--bg-blue);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* Rectangle Header */
+header {
+    background-color: var(--bg-button);
+}
+.header-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-list li {
+    list-style: none;
+    padding: 1.5rem;
+}
+.header-list a {
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--bg-blue);
+}
+
+.header-list a:hover, .header-list a:active {
+    border-bottom: 0.5rem solid var(--border-button);
+}
+
+/********** Main **********/
+/* Index Main */
+.index-description {
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+    margin: 7rem 0 5rem;
+}
+.index-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.index-list li {
+    list-style: none;
+}
+.index-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.4rem;
+}
+
+.index-list a:hover, .index-list a:active{
+    border-bottom: 0.5rem solid var(--border-button);
+}
+
+
+/* Rectangle and Circle */
+/* First Section - bg image, hero, title */
+.container-image {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../img/fondo_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30rem;
+}
+
+.hero-image {
+    align-self: flex-end;
+    width: 30rem;
+}
+
+.container-image h1 {
+    color: var(--text-color);
+    background-color: var(--bg-button);
+    padding: 2rem 1rem;
+    font-size: 3rem;
+}
+
+
+/* Second Section */
+.second-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-blue);
+    color: white;
+}
+
+.second-section h2 {
+    font-size: 2.4rem;
+    padding: 1rem 0 2.5rem;
+}
+
+/* Image and inputs and results */
+.second-section__info {
+    display: flex;
+    gap: 3rem;
+}
+
+/* Img rectangulo y circulo */
+.img-rect img {
+    width: 25rem;
+}
+.img-circle img {
+    width: 15rem;
+}
+
+/* Inputs */
+.form-div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.8rem;
+}
+.form-div input {
+    padding: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+.form-div label {
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Results */
+.form-div-results {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+.value-out h3 {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+}
+.form-div-results label {
+    font-size: 1.6rem;    
+}
+.form-div-results input {
+    padding: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    width: 15rem;
+}
+
+/* Button CALCULAR*/
+.btn-calc button{
+    color: var(--text-color);
+    font-size: 2.4rem;
+    font-weight: 900;
+    background-color: var(--bg-button);
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    &:hover{
+        border: 0.5rem solid var(--border-button);
+    }
+}

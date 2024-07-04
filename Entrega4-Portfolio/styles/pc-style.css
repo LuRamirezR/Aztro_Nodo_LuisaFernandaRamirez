@@ -1,0 +1,164 @@
+/* PC Styles - Responsive */
+
+@media (min-width: 1024px) {
+  /* Navigation Bar */
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    padding: 0.5rem;
+  }
+  header img {
+    width: 200px;
+  }
+  .navigation-item {
+    font-size: 16px;
+  }
+  .navigation-item:hover, .navigation-item:active {
+  background-color: var(--backgroundcolor-hover);
+  color: var(--text-color);
+  padding: 0.5rem 0.5rem 1.7rem;
+  border-radius: 10% 10% 0 0;
+}
+
+.navigation-item.active {
+  background-color: var(--backgroundcolor-hover);
+  color: var(--text-color);
+  padding: 0.5rem 0.5rem 1.7rem;
+  border-radius: 10% 10% 0 0;
+}
+
+  /* Home */
+  /* Logo and Principal Title Section */
+  .ppal-title {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 10rem 4rem 5rem;
+  }
+  .ppal-title img {
+    width: 60vh;
+}
+
+/* About me */
+.about-second-section p {
+    font-size: 16px;
+}
+/* Images Section */
+.about-third-section {
+    flex-direction: row;
+    justify-content: center;
+}
+.about-third-section img {
+    width: 35vh;
+}
+
+  /* Skills */
+  /* Images-Logo Skills - Second Section*/
+  .skills-second-section {
+    /* Para centrar la grid */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .cointainer-skills {
+    display: grid;
+    grid-template-columns: repeat(5 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3rem;
+  }
+  .cointainer-skills img {
+    height: 10rem;
+  }
+  .skill-1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;    
+  }
+  .skill-2 {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+  }
+  .skill-3 {
+    grid-column: 5 / span 1;
+    grid-row: 1 / span 1;
+  }
+  .skill-4 {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .skill-5 {
+    grid-column: 4 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .skill-6 {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+  .skill-7 {
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+  }
+  .skill-8 {
+    grid-column: 5 / span 1;
+    grid-row: 3 / span 1;
+  }
+  
+  /* Projects */
+  .projects-second-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .description-project p {
+        font-size: 14px;
+    }
+
+    .container-projects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+        margin: 0 5rem 1rem;
+    }
+
+    .project-1, .project-2, .project-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #f8f9fa;
+        border-radius: 5px;
+        box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+    }
+    .project-1 {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+    .project-2 {
+        grid-column: 3 / span 1;
+        grid-row: 1 / span 1;
+    }
+    .project-3 {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    /* Contact me */
+    /* Form Section */
+    .form-contact {
+        max-width: 80vh;
+    }
+
+    /* Footer Section */
+    .footer-section {
+        margin-right: 10rem;
+    }
+}
+
+
+

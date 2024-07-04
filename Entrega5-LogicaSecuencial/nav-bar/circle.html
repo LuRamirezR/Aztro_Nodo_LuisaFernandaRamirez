@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Círculo</title>
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../styles/variables.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul class="header-list">
+                <li>
+                    <a href="./rect.html">Rectángulo</a>
+                </li>
+                <li>
+                    <a href="./circle.html">Círculo</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main Section -->
+    <main>
+        <section class="container-image">
+            <h1>EL CÍRCULO</h1>
+            <img src="../img/superhero.png" alt="imagen de un super heroe" class="hero-image">
+        </section>
+        <section class="second-section">
+            <!-- Subtítulo -->
+            <div>
+                <h2>CALCULADORA DE ÁREA Y PERÍMETRO</h2>
+            </div>
+            <!-- Sección imagen y texto -->
+            <div class="second-section__info">
+                <!-- imagen de circulo -->
+                <div class="img-circle">
+                    <img src="../img/circulo.png" alt="">
+                </div>
+                <!-- Ingreso de radio del circulo -->
+                <div>
+                    <form>
+                        <div class="form-div">
+                            <label for="radio-circle">Radio en centímetros</label>
+                            <input type="number" id="radio-circle" name="radio-circle" placeholder="Escribe el radio en cm">
+                        </div>
+                    </form>
+                </div>
+                <!-- Resultados calculo -->
+                <div class="value-out">
+                    <h3>Resultados</h3>
+                    <div class="form-div-results">
+                        <label>Área (cm²)</label>
+                        <input type="text" id="result-area-circle" readonly>
+                    </div>
+                    <div class="form-div-results">
+                        <label>Perímetro (cm)</label>
+                        <input type="text" id="result-perimetro-circle" readonly>
+                    </div>
+                </div>
+            </div>
+            <!-- Boton para calcular -->
+            <div class="btn-calc">
+                <button onclick="calcularCircle()">CALCULAR</button>
+            </div>
+        </section>
+    </main>
+    <script src="../calculos/circle.js"></script>
+</body>
+</html>

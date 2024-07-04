@@ -1,0 +1,21 @@
+:root {
+  --title-font-family: "Montserrat Variable", sans-serif;
+  --text-font-family: "Roboto", sans-serif;
+  --backgroundcolor-nav: #2e2e2e;
+  --backgroundcolor-body: #f3f3f3;
+  --backgroundcolor-hover: #e0c7e8;
+  --title-color: #6e5964;
+  --text-color: #5575ac;
+  --title-h1-font-size: 36px;
+}
+
+/*
+Colors:
+Dark: #2e2e2e - para fondo nav, hover texto
+#6e5964 - titulos
+#5575ac - texto
+#e0c7e8 - hover fondo
+#f3f3f3 - para fondo body
+font-size-mobile: 36px
+font-size-tabletpc: 52px
+*/
