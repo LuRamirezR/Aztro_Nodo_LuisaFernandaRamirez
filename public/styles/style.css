@@ -35,16 +35,13 @@ nav {
 }
 
 .list-nav a:hover, .list-nav a:active {
-    color: #642867;
+    color: var(--border-article);
 }
 
 .socialmedia-container {
-    padding: 5px 0;
+    padding: 10px 20px 0;
     display: flex;
     gap: 10px;
-}
-.socialmedia-icon {
-    fill: var(--title-nav-color);
 }
 
 
@@ -62,6 +59,8 @@ nav {
 .main-title p {
     color: var(--text-color);
     padding-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 /* Challenges Section */
@@ -87,7 +86,7 @@ nav {
     border-radius: 7px;
     width: 350px;
     padding: 10px;
-    border-left: 7px solid var(--title-nav-color);
+    border-left: 7px solid var(--border-article);
     filter: drop-shadow(0 0 5px #57155b);
 }
 .title-project {
@@ -97,11 +96,12 @@ nav {
     align-items: center;
 }
 .challenge h3 {
-    color: var(--title-color);
+    color: var(--title-article);
     font-size: 20px;
+    padding-bottom: 5px;
 }
 .challenge p {
-    color: var(--text-color);
+    color: var(--text-article);
     font-size: 16px;
 }
 
