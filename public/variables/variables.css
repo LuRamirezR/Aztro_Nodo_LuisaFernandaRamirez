@@ -1,23 +1,10 @@
 :root {
-    --bg-color: #faf5f9;
-    --bg-article: #f0fdfa;
-    --title-color: #4D243D;
+    --bg-color: #f3f3f3;
+    --bg-article: #ccd7ea;
+    --title-color: #391342;
     --title-nav-color: #243D4D;
-    --text-color: #5C3D6D;
-    --social-media: #D35D2F;
-    --border-article: #2FD3C1;
-    --title-article: #042f2f;
-    --text-article: #0e9389;
+    --text-color: #841c59;
+    --border-article: #4578bf;
+    --title-article: #391342;
+    --text-article: #841c59;
 }
-
-/*
---bg-color: #fcf6fd;
-    --bg-article: #f1d7f7;
-    --title-color: #57155b;
-    --title-nav-color: #ab41b8;
-    --text-color: #8f3398;
-    Colores Complementarios: Amarillo verdoso (#C1D32F) y #4D243D.
-Colores Análogos: Colores en la gama de púrpura y azul, como #4D243D, #5C3D6D, y #7D4D6C.
-    Colores Triádicos: Verde azulado (#243D4D) y ocre (#4D4D24) junto con #4D243D
-    Colores Tetrádicos: Agregando un naranja (#D35D2F) y un verde azulado (#2FD3C1) a #4D243D
-*/
