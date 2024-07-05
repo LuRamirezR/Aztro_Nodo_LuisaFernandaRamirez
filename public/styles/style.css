@@ -85,11 +85,16 @@ nav {
 }
 .challenge {
     background-color: var(--bg-article);
-    border-radius: 7px;
+    border-radius: 7px 7px 40px 7px;
     width: 350px;
+    height: 200px;
     padding: 10px;
     border-left: 7px solid var(--border-article);
-    filter: drop-shadow(0 0 5px #391342);
+    filter: drop-shadow(7px 7px 5px #693078);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .title-project {
     display: flex;
@@ -100,7 +105,7 @@ nav {
 .challenge h3 {
     color: var(--title-article);
     font-size: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 .challenge p {
     color: var(--text-article);
