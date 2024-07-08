@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 80vw;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+}
+
+.gallery-img-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.posters img {
+    width: 95%;
+    height: 95%;
+    object-fit: fill;
+    border-radius: 15px;
+}
+
+.poster-piratas {
+    grid-column: 2;
+    grid-row: 1 / 3;
+}
+
+.poster-harry {
+    grid-column: 3 / 5;
+}
+
+.poster-avengers {
+    grid-row: 3 / 5;
+}
+
+.poster-avatar {
+    grid-column: 2 / 4;
+}
+
+.poster-matrix {
+    grid-column: 4;
+    grid-row: 3 / 5;
+}

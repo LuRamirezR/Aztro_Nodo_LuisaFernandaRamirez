@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JS</title>
+</head>
+<body>
+    <h2>Ejercicios prácticos de JS</h2>
+    <section>
+        <p>1. Un nadador necesita conocer el promedio final de tiempo que gasta en recorrer una piscina de 100 metros, sabiendo que en el día realiza cinco pruebas medidas en segundos</p>
+        <article>
+            <form>
+                <div>
+                    <input type="number" id="test_1" placeholder="Prueba 1 en segundos">
+                    <input type="number" id="test_2" placeholder="Prueba 2 en segundos">
+                    <input type="number" id="test_3" placeholder="Prueba 3 en segundos">
+                    <input type="number" id="test_4" placeholder="Prueba 4 en segundos">
+                    <input type="number" id="test_5" placeholder="Prueba 5 en segundos">
+                </div>
+                <label for="">Tiempo promedio: <input type="number" id="promedio-nadador" disabled> segundos</label>
+                <div>
+                    <input type="button" value="Calcular" onclick="practicalExercise_1()">
+                    <input type="reset" value="Limpiar">
+                </div>
+            </form>
+        </article>
+    </section>
+    <section>
+        <p>2. Un agrónomo desea una forma rápida de encontrar cuantos litros de pesticida debe aplicar a un conjunto de terrenos de forma trapezoidal, si por cada metro cuadrado debe aplicar 1.5 litros de pesticida. Además le piden que determine cuantos metros de cerca eléctrica son necesarios para rodear todo el terreno.</p>
+        <p>Ingresa los valores de las bases, altura y lados del trapezoide, en metros (m)</p>
+        <article>
+            <form>
+                <article>
+                    <div>
+                        <label for="trapezoide_base1">Valor de base (b1): </label>
+                        <input type="number" id="trapezoide_base1" placeholder="Ingresa valor en metros">
+                    </div>
+                    <div>
+                        <label for="trapezoide_base2">Valor de base (b2): </label>
+                        <input type="number" id="trapezoide_base2" placeholder="Ingresa valor en metros">
+                    </div>
+                    <div>
+                        <label for="trapezoide_altura">Valor de altura (h): </label>
+                        <input type="number" id="trapezoide_altura" placeholder="Ingresa valor en metros">
+                    </div>
+                    <div>
+                        <label for="trapezoide_lado1">Valor de lado (a1): </label>
+                        <input type="number" id="trapezoide_lado1" placeholder="Ingresa valor en metros">
+                    </div>
+                    <div>
+                        <label for="trapezoide_lado2">Valor de lado (a2): </label>
+                        <input type="number" id="trapezoide_lado2" placeholder="Ingresa valor en metros">
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <label for="">Área del terreno:</label>
+                        <input type="number" id="trapezoide_area" disabled> m²
+                    </div>
+                    <div>
+                        <label for="">Litros de pesticida:</label>
+                        <input type="number" id="litros_pesticida" disabled> litros por cada m²
+                    </div>
+                    <div>
+                        <label for="">Cerca eléctrica (perímetro):</label>
+                        <input type="number" id="trapezoide_perimetro" disabled> m
+                    </div>
+                </article>
+                <div>
+                    <input type="button" value="Calcular" onclick="practicalExercise_2()">
+                    <input type="reset" value="Limpiar">
+                </div>
+            </form>
+        </article>
+    </section>
+    <section>
+        <p>3. Un maestro de obra quiere emplear una forma rápida de poder calcular el número de ladrillos que necesita para una pared ¿Puedes ayudarlo?</p>
+        <p>Toma en cuenta el espacio del mortero entre los ladrillos (es la unión entre ladrillos)</p>
+        <article>
+            <form>
+                <article>
+                    <p>La pared</p>
+                    <div>
+                        <label for="alturaPared">Altura de la pared:</label>
+                        <input type="number" id="alturaPared" placeholder="Ingresa valor en metros"> m
+                    </div>
+                    <div>
+                        <label for="anchoPared"> Ancho de la pared:</label>
+                        <input type="number" id="anchoPared" placeholder="Ingresa valor en metros"> m
+                    </div>
+                </article>
+                <article>
+                    <p>El ladrillo</p>
+                    <div>
+                        <label for="alturaLadrillo">Altura del ladrillo:</label>
+                        <input type="number" id="alturaLadrillo" placeholder="Ingresa valor en cm"> cm
+                    </div>
+                    <div>
+                        <label for="anchoLadrillo">Ancho del ladrillo:</label>
+                        <input type="number" id="anchoLadrillo" placeholder="Ingresa valor en cm"> cm
+                    </div>
+                </article>
+                <article>
+                    <label for="mortero">Mortero:</label>
+                    <input type="number" id="mortero" placeholder="Ingresa valor en cm"> cm
+                </article>
+                <article>
+                    <div>
+                        <label for="">Área de la pared:</label>
+                        <input type="number" id="areaPared" disabled> m²
+                    </div>
+                    <div>
+                        <label for="">Área del ladrillo:</label>
+                        <input type="number" id="areaLadrillo" disabled> cm²
+                    </div>
+                    <div>
+                        <label for="">Número de ladrillos:</label>
+                        <input type="number" id="cantidadLadrillos" disabled>
+                    </div>
+                </article>
+                <div>
+                    <input type="button" value="Calcular" onclick="practicalExercise_3()">
+                    <input type="reset" value="Limpiar">
+                </div>
+            </form>
+        </article>
+    </section>
+    <section>
+        <p>4. Un nutricionista necesita saber el índice de masa corporal (IMC) de una persona para determinar su estado físico. Sin embargo pierde mucho tiempo haciendo el cálculo. ¿Puedes desarrollar un programa usando JS para ayudarlo?</p>
+        <article>
+            <form>
+                <article>
+                    <div>
+                        <label for="pesoPersona">Peso:</label>
+                        <input type="number" step="0.1" id="pesoPersona" placeholder="Ingresa valor en Kg"> Kg
+                    </div>
+                    <div>
+                        <label for="estaturaPersona">Estatura:</label>
+                        <input type="number" step="0.1" id="estaturaPersona" placeholder="Ingresa valor en metros"> m
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <label for="">Resultado IMC:</label>
+                        <input type="number" id="resultadoImc" disabled>
+                    </div>
+                    <div>
+                        <label for="">Composición corporal:</label>
+                        <input type="text" id="composicionCorporal" disabled>
+                    </div>
+                </article>
+                <div>
+                    <input type="button" value="Calcular" onclick="practicalExercise_4()">
+                    <input type="reset" value="Limpiar">
+                </div>
+            </form>
+        </article>
+    </section>
+    <section>
+        <p>5. Un gerente de una tienda debe liquidar a sus empleados según el número de días trabajados en el mes y horas extras. Además debe descontar la salud (4%) y la pensión (4%), así como un deducible del 3% referente a la alimentación. Valor por día trabajado: $43000, valor hora extra diurna $ 6915, nocturna $9681 y festivos $11064</p>
+        <article>
+            <form>
+                <article>
+                    <div>
+                        <label for="numDiasLaborados">Cantidad de días laborados en el mes:</label>
+                        <input type="number" id="numDiasLaborados" placeholder="Ingresa días laborados">
+                    </div>
+                    <p>Si hizo horas extra, ingresalas aquí:</p>
+                    <div>
+                        <label for="extraDiurna">Horas extra diurna:</label>
+                        <input type="number" id="extraDiurna" placeholder="Ingresa hora extra diurna">
+                    </div>
+                    <div>
+                        <label for="extraNocturna">Horas extra nocturna:</label>
+                        <input type="number" id="extraNocturna" placeholder="Ingresa hora extra nocturna">
+                    </div>
+                    <div>
+                        <label for="extraFestivo">Horas extra festivo:</label>
+                        <input type="number" id="extraFestivo" placeholder="Ingresa hora extra festivo">
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <label for="">Total de horas laboradas en el mes:</label>
+                        <input type="number" id="horasLaboradas" disabled> horas
+                    </div>
+                    <div>
+                        <label for="">Pago total sin deducción:</label>
+                        <input type="text" id="pagoTotalSinDeduccion" disabled>
+                    </div>
+                    <div>
+                        <label for="">Pago total con deducción:</label>
+                        <input type="text" id="pagoTotalConDeduccion" disabled>
+                    </div>
+                </article>
+                <div>
+                    <input type="button" value="Calcular" onclick="practicalExercise_5()">
+                    <input type="reset" value="Limpiar">
+                </div>
+            </form>
+        </article>
+    </section>
+    <script src="./calculate.js"></script>
+</body>
+</html>
