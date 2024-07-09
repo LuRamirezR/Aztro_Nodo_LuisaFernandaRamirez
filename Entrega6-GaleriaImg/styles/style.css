@@ -5,65 +5,113 @@
 }
 
 body {
-    width: 80vw;
+    width: 90vw;
     margin: auto;
-    background-color: #eeefe3;
+    background-color: #55a29e;
 }
-/* main {
-    height: 1000px;
-} */
 
+/* Titulo principal */
 header {
     text-align: center;
-    color: #252b3c;
-    margin: 20px;
+    color: #250c21;
+    margin: 15px;
     font-family: 'Inter Variable', sans-serif;
     font-weight: 900;
-    /* text-shadow: 5px 5px 6px rgba(6,6,10,0.43); */
 }
 
-.gallery-img-section {
+/* Uso flex para centrar la grid en la pantalla */
+main {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.gallery-container {
+
+/* Contenedor del grid 4x4 */
+.posters-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 20px;
-    margin-bottom: 30px;    
+    gap: 15px;
+    width: 80vw;
+    height: 80vh;
 }
 
-.posters img {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
+/* Clase común para las imagenes, configuraciones aplicadas a las 11 img */
+.poster{
     border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-.posters img:hover {
+
+.poster:hover {
     transform: scale(1.03);
     box-shadow: 10px 10px 5px -4px rgba(30,71,76,0.75);
 }
 
-.poster-piratas {
+/* Ubicacion de las imagenes en el grid y carga URL de la imagen */
+.poster-1 {
+    grid-column: 1;
+    grid-row: 1;
+    background-image: url(../img/montana.jpg);
+}
+
+.poster-2 {
     grid-column: 2;
-    grid-row: 1 / 3;
+    grid-row: 1/3;
+    background-image: url(../img/modelo.jpg);
 }
 
-.poster-harry {
-    grid-column: 3 / 5;
+.poster-3 {
+    grid-column: 3/5;
+    grid-row: 1;
+    background-image: url(../img/cafe.jpg);
 }
 
-.poster-avengers {
-    grid-row: 3 / 5;
+.poster-4 {
+    grid-column: 1;
+    grid-row: 2;
+    background-image: url(../img/bici.jpg);
 }
 
-.poster-avatar {
-    grid-column: 2 / 4;
+.poster-5 {
+    grid-column: 3;
+    grid-row: 2;
+    background-image: url(../img/concierto.jpg);
 }
 
-.poster-matrix {
+.poster-6 {
     grid-column: 4;
-    grid-row: 3 / 5;
+    grid-row: 2;
+    background-image: url(../img/auroraBoreal.jpg);
+}
+
+.poster-7 {
+    grid-column: 1;
+    grid-row: 3/5;
+    background-image: url(../img/paris.jpg);
+}
+
+.poster-8 {
+    grid-column: 2/4;
+    grid-row: 3;
+    background-image: url(../img/selva.jpg);
+}
+
+.poster-9 {
+    grid-column: 4;
+    grid-row: 3/5;
+    background-image: url(../img/catrina.jpg);
+}
+
+.poster-10 {
+    grid-column: 2;
+    grid-row: 4;
+    background-image: url(../img/dev.jpg);
+}
+
+.poster-11 {
+    grid-column: 3;
+    grid-row: 4;
+    background-image: url(../img/pastas.jpg);
 }
