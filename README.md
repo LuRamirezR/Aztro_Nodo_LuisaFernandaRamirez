@@ -15,3 +15,9 @@ Creo otro diseño de un portfolio con las páginas de la barra de navegación se
 
 # Calculadora de área, perímetro 📐
 Calculadora para el área, perímetro y diagonal de un rectángulo, recibiendo los valores de base y altura del usuario. También calcula el área y el perímetro de un círculo, solicitando el valor del radio al usuario
+
+# Galeria de imágenes 🖼️
+Creo una galería de imágenes aplicando display: grid
+
+# Ejercicios con JavaScript 💡
+Utilizo formularios HTML y JavaScript para dar solución a las diferentes situaciones plateadas
