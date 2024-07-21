@@ -1,0 +1,30 @@
+/* Variables Globales */
+
+/* Import Fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+/* Colores */
+$color-primario: #8841da;
+$color-secundario: #3f579a;
+$color-oscuro: #333;
+$color-gris: #aeadad;
+$color-text-btn: #fff;
+
+/* Fuentes */
+$fuente-ppal: "Oswald", sans-serif;
+$fuente-sec: "Lato", sans-serif;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin text-styles($color: #70eb0c, $letter-size: 5px, $letter-font: "Arial") {
+  font-family: $letter-font;
+  color: $color;
+  font-size: $letter-size;
+  text-transform: uppercase;
+  text-align: center;
+}
